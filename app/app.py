@@ -26,11 +26,11 @@ with st.form(key='params_for_api'):
 
     pickup_address = st.text_input('pickup address')
     if pickup_address:
-        pickup_longitude, pickup_latitude = geocode(pickup_address)
+        pickup_latitude, pickup_longitude = geocode(pickup_address)
 
     dropoff_address = st.text_input('dropoff address')
     if dropoff_address:
-        dropoff_longitude, dropoff_latitude = geocode(dropoff_address)
+        dropoff_latitude, dropoff_longitude = geocode(dropoff_address)
 
 
     # pickup_longitude = st.number_input('pickup longitude', value=40.7614327)
