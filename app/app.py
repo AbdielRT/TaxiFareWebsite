@@ -32,7 +32,6 @@ with st.form(key='params_for_api'):
     if dropoff_address:
         dropoff_latitude, dropoff_longitude = geocode(dropoff_address)
 
-
     # pickup_longitude = st.number_input('pickup longitude', value=40.7614327)
     # pickup_latitude = st.number_input('pickup latitude', value=-73.9798156)
     # dropoff_longitude = st.number_input('dropoff longitude', value=40.6413111)
@@ -56,3 +55,4 @@ with st.form(key='params_for_api'):
         pred = prediction['fare']
 
         st.header(f'Fare amount: ${round(pred, 2)}')
+        st.write(response.url)
